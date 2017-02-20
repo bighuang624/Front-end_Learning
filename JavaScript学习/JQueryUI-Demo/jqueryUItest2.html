@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+	<title>jqueryUItest2</title>
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<script type="text/javascript" src="jqueryUItest2.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+<!--     <script type="text/javascript">
+        $(function(){
+            $("#progressbar").progressbar({value:50});
+        });
+    </script> -->
+    <style type="text/css">
+        #menu{
+            width:150px;
+        }
+        .ui-menu:after{
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        }
+        .ui-menu .ui-menu-item{
+            display: inline-block;
+            float: left;
+            margin: 0;
+            padding: 10;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="progressbar"></div>
+    <br/>
+    <ul id="menu">
+        <li>
+            <a href="#">Java</a>
+            <ul>
+                <li><a href="#">Java EE</a></li>
+                <li><a href="#">Java SE</a></li>
+                <li><a href="#">Java ME</a></li>
+            </ul>
+        </li>
+        <li>C</li>
+        <li>C++</li>
+        <li>Python</li>
+    </ul>
+    <br/>
+    <span id="span">0</span>
+    <div id="slider"></div>
+    <br/>
+    <input id="input"></input>
+    <button id="btn">getValue</button>
+    <br/>
+    <div id="tabs">
+        <ul>
+            <li><a href="#hello1">hello1</a></li>
+            <li><a href="#hello2">hello2</a></li>
+            <li><a href="#hello3">hello3</a></li>
+        </ul>
+        <div id="hello1">
+            Hello1
+        </div>
+        <div id="hello2">
+            Hello2
+        </div>
+        <div id="hello3">
+            Hello3
+        </div2
+    </div>
+</body>
+</html>

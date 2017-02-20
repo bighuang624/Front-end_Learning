@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+	<title>jqueryUItest</title>
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<script type="text/javascript" src="jqueryUItest.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+	<style type="text/css">
+		.ui-selected{
+			background-color: blue;
+		}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$("#datepicker").datepicker();
+		})
+	</script>
+</head>
+<body>
+	<label for="tags">Tags:</label>
+    <input id="tags"></input>
+    <br/>
+    <p>Date:<input type="text" id="datepicker"></p>
+    <br/>
+    <div id="dialog">
+    	<p>恭喜你答对了！</p>
+    </div>
+    <div style="width: 100px;height: 100px;border: 2px solid red;" id="div"></div>
+    <div style="width: 100px;height: 100px;border: 2px solid blue;" id="Rect1"></div>
+    <div style="width: 200px;height: 200px;border: 2px solid green;" id="Rect2"></div>
+    <br/>
+    <br/>
+    <strong>hello?</strong>
+    <ul id="select">
+    	<li id="right">A.hello</li>
+    	<li>B.no</li>
+    	<li>C.gun</li>
+    </ul>
+    <a href="#" id="a_btn">提交</a>
+    <br/>
+    <br/>
+    <div id="accordion">
+    	<h3>选项1</h3>
+    	<div>
+    		<p>
+    			hellofromtheothersidehellofromtheothersidehellofromtheothersidehellofromtheothersidehellofromtheothersidehellofromtheotherside
+    		</p>
+    	</div>
+    	<h3>选项2</h3>
+    	<div>
+    		<p>
+    			hellofromtheothersidehellofromtheothersidehellofromtheothersidehellofromtheothersidehellofromtheothersidehellofromtheotherside
+    		</p>
+    	</div>
+    	<h3>选项3</h3>
+    	<div>
+    		<p>
+    			hellofromtheothersidehellofromtheothersidehellofromtheothersidehellofromtheothersidehellofromtheothersidehellofromtheotherside
+    		</p>
+    	</div>
+    </div>
+
+</body>
+</html>

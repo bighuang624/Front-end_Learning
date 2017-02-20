@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>checkboxradio、collapsible</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<h1>欢迎来到我的主页</h1>
+		</div>
+		<div data-role="content">
+			<label>
+				<input type="checkbox">苹果
+			</label>
+
+			<fieldset data-role="controlgroup">
+				<label>
+					<input type="checkbox" name="cb0">苹果
+				</label>
+				<label>
+					<input type="checkbox" name="cb0" data-theme="b">西瓜
+				</label>
+				<label>
+					<input type="checkbox" name="cb0">梨
+				</label>
+			</fieldset>
+
+			<fieldset data-role="controlgroup" data-type="horizontal">
+				<label>
+					<input type="checkbox" name="cb0">苹果
+				</label>
+				<label>
+					<input type="checkbox" name="cb0" data-theme="b">西瓜
+				</label>
+				<label>
+					<input type="checkbox" name="cb0">梨
+				</label>
+			</fieldset>
+
+			<fieldset data-role="controlgroup">
+				<label>
+					<input type="radio" name="r1" id="man">男
+				</label>
+				<label>
+					<input type="radio" name="r1" id="woman">女
+				</label>
+			</fieldset>
+
+		</div>
+		<div data-role="footer">
+			<h4>这是底部</h4>
+		</div>
+	</div>
+
+	
+</body>
+</html>
