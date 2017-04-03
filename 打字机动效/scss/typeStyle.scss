@@ -1,0 +1,94 @@
+.typing {
+  background-color: #CBADDA;
+  margin: auto;
+  margin-top: 120px;
+  width: 150px;
+  height: 150px;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+
+  .typewritter {
+    position: absolute;
+    background-image: url("../images/typewriter/typewritter.png");
+    background-size: cover;
+    width: 94px;
+    height: 70px;
+    top: 81px;
+    left: 28px;
+    z-index: 3;
+  }
+
+  @keyframes handlebar {
+    0%{
+      transform: translateX(0);
+    }
+    25%{
+      transform: translateX(8px);
+    }
+    50%{
+      transform: translateX(0);
+    }
+    75%{
+      transform: translateX(-8px);
+    }
+    80%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }
+
+  .handlebar {
+    position: absolute;
+    background-image: url("../images/typewriter/handlebar.png");
+    background-size: cover;
+    width: 112px;
+    height: 18px;
+    top: 72px;
+    left: 19px;
+    z-index: 1;
+    animation: handlebar 1s ease-in infinite;
+  }
+
+  @keyframes paper {
+    0%{
+      transform: translateY(0);
+    }
+    30%{
+      transform: translateY(-16px);
+    }
+    35%{
+      transform: translateY(-14px);
+    }
+    60%{
+      transform: translateY(-24px);
+    }
+    65%{
+      transform: translateY(-22px);
+    }
+    90%{
+      transform: translateY(-32px);
+    }
+    95%{
+      transform: translateY(-30px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
+
+  .paper {
+    position: absolute;
+    background-image: url("../images/typewriter/paper.png");
+    background-size: cover;
+    width: 70px;
+    height: 78px;
+    top: 66px;
+    left: 40px;
+    z-index: 2;
+    animation: paper 3s ease-out infinite;
+  }
+
+}
