@@ -20,6 +20,8 @@
 
 关于 JQueryUI 和 AngularJS 的一些 Demo。
 
+Vue 的学习练手。
+
 #### 双飞翼布局
 
 关于圣杯布局与双飞翼布局的实践。

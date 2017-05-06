@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formTest</title>
+</head>
+<body>
+
+<script src="http://cdn.bootcss.com/vue/2.2.6/vue.js"></script>
+
+<div id="login-form">
+    <p>login</p>
+    <input type="text" placeholder="手机号" v-model.trim="phone" @blur="phoneWarning">
+    <p>{{ phone_warning }}</p>
+    <input type="password" placeholder="密码" autocomplete="off" v-model.trim="password" @blur="passwordWarning">
+    <p>{{ password_warning }}</p>
+    <input type="checkbox" v-model="remembered">记住我
+    <button @click="loginFormSubmit">登录</button>
+</div>
+
+<div id="register-form">
+    <p>register</p>
+    <input type="text" placeholder="手机号" v-model.trim="phone" @blur="phoneWarning">
+    <p>{{ phone_warning }}</p>
+    <input type="password" placeholder="密码" autocomplete="off" v-model.trim="password" @blur="passwordWarning">
+    <p>{{ password_warning }}</p>
+    <input type="password" placeholder="重复密码" autocomplete="off" v-model.trim="valid_password" @blur="validPasswordWarning">
+    <p>{{ valid_password_warning }}</p>
+    <input type="text" placeholder="验证码" v-model.trim="valid_code" @blur="validCodeWarning">
+    <p>{{ valid_code_warning }}</p>
+    <button @click="getValidCode" :disabled="get_valid_code">{{ valid_code_state }}</button>
+    <button @click="registerFormSubmit">注册</button>
+</div>
+
+
+<script src="js/formTest.js"></script>
+</body>
+</html>
